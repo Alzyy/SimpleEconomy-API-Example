@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'it.alzy.examplePlugin'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral() // Add Maven central repository
+    maven {
+        name = "papermc-repo"
+        url = "https://repo.papermc.io/repository/maven-public/"
+    }
+}
+
+dependencies {
+    compileOnly("io.papermc.paper:paper-api:1.21.8-R0.1-SNAPSHOT")
+    implementation 'io.github.alzyy:simpleeconomy-api:1.0.0' // Implementation of SimpleEconomy API
+
+}
